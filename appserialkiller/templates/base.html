@@ -6,10 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SERIAL KILLER</title>
-    <link rel="icon" href="{% static 'img/pistola.ico' %}">
+    <link rel="icon" href="{% static 'img/muerte.png' %}">
     <link rel="stylesheet" href="{% static 'style/estilo.css' %}">
 </head>
 <body>
+    <div id="logo"><a href='/'><img src="{% static 'img/2.png' %}"></a> </div>
+    <nav id="nav"> 
+        <a href='/registro'>Registro</a>
+        <a href='/visualizar'>Visualizar Asesinos</a>
+    </nav>
     {% block contenido %}{% endblock %}
+
+    <footer>Todos los derechos reservados</footer>
 </body>
 </html>
